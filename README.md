@@ -1,6 +1,6 @@
 # fm-dx-webserver-proxy
 
-Simple Node.js WebSocket relay / fan-out server.
+Simple Node.js WebSocket relay / fan-out server for https://github.com/NoobishSVK/fm-dx-webserver .
 
 It opens a single upstream WebSocket connection and broadcasts received frames to multiple downstream clients. Useful when the source side has limited bandwidth and you want to avoid one upstream connection per client.
 
