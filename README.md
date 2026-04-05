@@ -36,8 +36,10 @@ Instead of opening one upstream connection per client, `fm-dx-webserver-proxy` k
 git clone https://github.com/tuxikcz/fm-dx-webserver-proxy.git -b main
 cd fm-dx-webserver-proxy
 npm install
+```
 
 ## Usage
+
 ```bash
 Options:
   --upstream URL        Upstream WebSocket URL (required)
