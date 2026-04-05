@@ -58,4 +58,30 @@ Options:
 Examples:
   node fm-dx-webserver-proxy.js --upstream ws://10.0.0.2:8080/audio --listen-port 8081
   node fm-dx-webserver-proxy.js --upstream wss://example.com/audio --listen-host 127.0.0.1 --listen-port 9000 --listen-path /audio
+```
+## Nginx proxy scenario
+```
+location /audio {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_http_version 1.1;
 
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+        proxy_set_header Host $host;
+
+        proxy_read_timeout 1h;
+        proxy_send_timeout 1h;
+    }
+
+  location / {
+    proxy_set_header   X-Real-IP $remote_addr;
+    proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header   Host $host;
+    proxy_pass http://10.0.0.2:8080;
+    proxy_http_version 1.1;
+    proxy_set_header   Upgrade $http_upgrade;
+    proxy_set_header   Connection "upgrade";
+  }
+
+
+```
