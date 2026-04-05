@@ -41,6 +41,11 @@ npm install
 ## Usage
 
 ```bash
+$ node fm-dx-webserver-proxy.js --help
+
+Usage:
+  node ws-relay.js --upstream ws://10.0.200.42:8080/audio [options]
+
 Options:
   --upstream URL        Upstream WebSocket URL (required)
   --listen-host HOST    Local listen host (default: 0.0.0.0)
@@ -51,6 +56,6 @@ Options:
   --help                Show this help
 
 Examples:
-  node ws-relay.js --upstream ws://10.0.0.2:8080/audio --listen-port 8081
-  node ws-relay.js --upstream wss://example.com/audio --listen-host 127.0.0.1 --listen-port 9000 --listen-path /audio
+  node fm-dx-webserver-proxy.js --upstream ws://10.0.0.2:8080/audio --listen-port 8081
+  node fm-dx-webserver-proxy.js --upstream wss://example.com/audio --listen-host 127.0.0.1 --listen-port 9000 --listen-path /audio
 
