@@ -1,4 +1,4 @@
-# ws-relay
+# fm-dx-webserver-proxy
 
 Simple Node.js WebSocket relay / fan-out server.
 
