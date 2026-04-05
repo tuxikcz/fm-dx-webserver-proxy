@@ -44,7 +44,7 @@ npm install
 $ node fm-dx-webserver-proxy.js --help
 
 Usage:
-  node ws-relay.js --upstream ws://10.0.200.42:8080/audio [options]
+  node fm-dx-webserver-proxy.js --upstream ws://10.0.200.42:8080/audio [options]
 
 Options:
   --upstream URL        Upstream WebSocket URL (required)
