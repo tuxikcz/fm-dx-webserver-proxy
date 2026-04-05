@@ -1,0 +1,30 @@
+{
+  "name": "ws-relay",
+  "version": "1.0.0",
+  "description": "Simple Node.js WebSocket relay / fan-out server",
+  "main": "fm-dx-webserver-proxy.js",
+  "bin": {
+    "ws-relay": "./fm-dx-webserver-proxy.js"
+  },
+  "scripts": {
+    "start": "node fm-dx-webserver-proxy.js",
+    "help": "node fm-dx-webserver-proxy.js --help"
+  },
+  "keywords": [
+    "websocket",
+    "relay",
+    "proxy",
+    "broadcast",
+    "fanout",
+    "audio",
+    "streaming"
+  ],
+  "author": "Tuxik",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
