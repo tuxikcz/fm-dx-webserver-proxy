@@ -33,6 +33,6 @@ Instead of opening one upstream connection per client, `fm-dx-webserver-proxy` k
 ## Installation
 
 ```bash
-git clone https://github.com/tuxikcz/fm-dx-webserver-proxy.git
-cd ws-relay
+git clone https://github.com/tuxikcz/fm-dx-webserver-proxy.git -b main
+cd fm-dx-webserver-proxy
 npm install
